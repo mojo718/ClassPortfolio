@@ -49,8 +49,12 @@ nav a:hover {
     }
 }
 
+.beach {
+    background-image: image();
+}
+
 .image-beach {
-    background-image: url(C:\Users\mojo7_qn307g2\Bootcamp\ClassPortfolio\ClassPortfolio\Assets\Images);
+    /* background-image: url(.//Assets/Images/14 gettyimages-1124319536_resized.jpg); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,12 +72,32 @@ nav a:hover {
 
 #myApps {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px; */
 }
 
-.flex-item {
+.myAppleft {
+    flex: 0 0 200px;
+    box-sizing: border-box;
+    font-size: xx-large;
+    border: #333;
+    /* min-width: 200px;
+    min-height: 300PX; */
+}
+
+/* 
+.myAppleft {
+  font-style: italic;
+} */
+
+.myAppRight {
+    /* flex-wrap: wrap; */
+    flex: 1;
+    justify-content: space-between;
+    padding: 20px;
+    /* display: flex; */
+    /* flex: 2; */
     width: 48%;
     margin-bottom: 20px;
     box-sizing: border-box;
@@ -84,14 +108,31 @@ nav a:hover {
 
 }
 
-.flex-item:hover {
+.myAppRight:hover {
+    border: 10Px;
     border-color: #e74c3c;
+    background-color: #555;
+
 }
 
+#aboutMe {
+    display: flex;
+}
+
+.aboutMeLeft {
+    font-size: xx-large;
+    border: #333;
+    min-width: 200px;
+    min-height: 300PX;
+}
 
 @media (max-width: 768px) {
     .flex-item {
         width: 100%;
 
     }
+}
+
+.FootBox {
+    display: flexbox;
 }
