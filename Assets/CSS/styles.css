@@ -59,16 +59,10 @@ nav a:hover {
     background-position: center;
     background-repeat: no-repeat;
     max-width: 100%;
-    height: auto;
+    line-height: 400px;
 }
 
-/* #beach {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-size: cover;
-    background-position: center;
-} */
+
 
 #myApps {
     display: flex;
@@ -78,61 +72,68 @@ nav a:hover {
 }
 
 .myAppleft {
-    flex: 0 0 200px;
-    box-sizing: border-box;
+    text-align: center;
+    flex: 0 0 150px;
+    
     font-size: xx-large;
-    border: #333;
-    /* min-width: 200px;
-    min-height: 300PX; */
+    border-right: 2px solid #333;
+ 
 }
-
-/* 
-.myAppleft {
-  font-style: italic;
-} */
-
 .myAppRight {
-    /* flex-wrap: wrap; */
     flex: 1;
     justify-content: space-between;
     padding: 20px;
-    /* display: flex; */
-    /* flex: 2; */
-    width: 48%;
+    min-width: 150px;
+    min-height: 300PX;
     margin-bottom: 20px;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 20px;
     border: 2px solid #333;
     background-color: #f0f0f0;
     transition: background-color 0.3s ease;
 
 }
+@media (min-width: 768px) {
+    .myAppRight {
+        display: flex;
+    }
+}
 
 .myAppRight:hover {
     border: 10Px;
-    border-color: #e74c3c;
+    border-color: 3px #e74c3c;
     background-color: #555;
 
 }
 
 #aboutMe {
     display: flex;
-}
+    padding: 0;
+  }
 
 .aboutMeLeft {
     font-size: xx-large;
-    border: #333;
-    min-width: 200px;
-    min-height: 300PX;
+    border-right: 2px solid #333;
+    min-width: 150px;
+    min-height: auto;
 }
 
-@media (max-width: 768px) {
-    .flex-item {
-        width: 100%;
-
-    }
+#aboutMe-Text {
+    display: flex ;
+    flex-direction: column;
+    padding: 50px;
+    text-indent: 2rem;
+    font-size: xx-large;
 }
 
-.FootBox {
-    display: flexbox;
+#aboutMe-Text2 {
+   flex-direction: column;
+    padding: 50px;
+    text-indent: 2rem;
+    font-size: larger;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
